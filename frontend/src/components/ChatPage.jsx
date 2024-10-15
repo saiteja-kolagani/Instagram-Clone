@@ -52,7 +52,7 @@ const ChatPage = () => {
                                 <div onClick={() => dispatch(setSelectedUser(suggestedUser))} className='flex gap-3 items-center p-3 hover:bg-gray-50 cursor-pointer'>
                                     <Avatar className='w-14 h-14'>
                                         <AvatarImage src={suggestedUser?.profilePicture} />
-                                        <AvatarFallback>CN</AvatarFallback>
+                                        <AvatarFallback>{suggestedUser?.username[0]}</AvatarFallback>
                                     </Avatar>
                                     <div className='flex flex-col'>
                                         <span className='font-medium'>{suggestedUser?.username}</span>
