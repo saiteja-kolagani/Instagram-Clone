@@ -64,7 +64,6 @@ function App() {
       });
       dispatch(setSocket(socketio));
 
-      // listen all the events
       socketio.on('getOnlineUsers', (onlineUsers) => {
         dispatch(setOnlineUsers(onlineUsers));
       });

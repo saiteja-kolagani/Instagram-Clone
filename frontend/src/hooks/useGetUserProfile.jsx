@@ -7,7 +7,6 @@ import { useDispatch } from "react-redux";
 
 const useGetUserProfile = (userId) => {
     const dispatch = useDispatch();
-    // const [userProfile, setUserProfile] = useState(null);
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {

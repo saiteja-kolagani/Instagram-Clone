@@ -80,7 +80,6 @@ const CommentDialog = ({ open, setOpen }) => {
                 </Link>
                 <div>
                   <Link className='font-semibold text-xs'>{selectedPost?.author?.username}</Link>
-                  {/* <span className='text-gray-600 text-sm'>Bio here...</span> */}
                 </div>
               </div>
 
